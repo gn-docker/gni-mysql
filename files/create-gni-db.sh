@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BACKUP_DIR=/opt/ubio/backup
+BACKUP_DIR=/opt/gni/backup
 
 if [ "$(ls $BACKUP_DIR | grep gz)" ]; then
   echo "Creating GNI databases..."

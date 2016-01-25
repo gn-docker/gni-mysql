@@ -1,5 +1,5 @@
 #!/bin/bash
 
-/usr/local/bin/ubio-mysql-stop
-/usr/local/bin/ubio-mysql-start
+/usr/local/bin/gni-mysql-stop
+/usr/local/bin/gni-mysql-start
 

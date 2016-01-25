@@ -1,9 +1,9 @@
 #!/bin/bash
 
-/usr/bin/docker run -d --name ubio-mysql \
-    --env-file /opt/ubio/config/production.env \
+/usr/bin/docker run -d --name gni-mysql \
+    --env-file /opt/gni/config/production.env \
     -p 3306:3306 \
-    -v /opt/ubio/mysql:/var/lib/mysql \
-    -v /opt/ubio/backup:/opt/ubio/backup \
-    -v /opt/ubio/config/my.cnf:/etc/mysql/my.cnf \
-  mblab/ubio-mysql
+    -v /opt/gni/mysql:/var/lib/mysql \
+    -v /opt/gni/backup:/opt/gni/backup \
+    -v /opt/gni/config/my.cnf:/etc/mysql/my.cnf \
+  mblab/gni-mysql
