@@ -2,7 +2,7 @@
 
 /usr/bin/docker run -d --name gni-mysql \
     --env-file /opt/gni/config/production.env \
-    -p 3306:3306 \
+    -p 0.0.0.0:3306:3306 \
     -v /opt/gni/mysql:/var/lib/mysql \
     -v /opt/gni/backup:/opt/gni/backup \
     -v /opt/gni/config/my.cnf:/etc/mysql/my.cnf \
